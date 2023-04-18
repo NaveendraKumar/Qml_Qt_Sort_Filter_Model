@@ -8,9 +8,10 @@ ApplicationWindow {
     visible: true
     width: 320
     height: 480
-    color: "#6bdce4"
+    //    color: "#6bdce4"
+    color: "#656565"
     property int margin: 12
-    flags: Qt.FramelessWindowHint
+    //    flags: Qt.FramelessWindowHint
 
     ColumnLayout {
         id: mainLayout
@@ -18,7 +19,8 @@ ApplicationWindow {
         anchors.margins: margin
 
         Rectangle{
-            color: "#6bdce4"
+            //            color: "#6bdce4"
+            color: "#ffffff"
             Layout.fillWidth: true
             height: 40
             z: 2
@@ -27,7 +29,7 @@ ApplicationWindow {
                 anchors.fill: parent
                 anchors.centerIn: parent
                 TextField {
-                    placeholderText: "Type here.."
+                    placeholderText: "Search.."
                     Layout.fillWidth: true
                     font.pointSize: 12
                     style: TextFieldStyle {
@@ -36,8 +38,9 @@ ApplicationWindow {
                             radius: 5
                             implicitWidth: 100
                             implicitHeight: 30
-                            border.color: "#6bdce4"
-                            border.width: 1
+                            //                            border.color: "#6bdce4"
+                            border.color: "#000000"
+                            border.width: 1.2
                         }
                     }
                     onTextChanged: {
@@ -51,7 +54,8 @@ ApplicationWindow {
                     }
                     style: CheckBoxStyle {
                         label: Text {
-                            color: "white"
+                            //                            color: "white"
+                            color: "#ffffff"
                             text: "Descending"
                             font.pointSize: 12
                         }
@@ -89,12 +93,14 @@ ApplicationWindow {
                 radius: 5
                 anchors.horizontalCenter: parent.horizontalCenter
                 height: 40
-                color: Qt.lighter("#6bdce4", 0.8)
+                //                color: Qt.lighter("#6bdce4", 0.8)
+                color: "#ffffff"
                 Text {
                     id: nameTxt
                     text: name
                     font.pointSize: 12
-                    color: "#FFFFFF"
+                    //                    color: "#FFFFFF"
+                    color: "#000000"
                     anchors.left: parent.left
                     anchors.leftMargin: 20
                     anchors.verticalCenter: parent.verticalCenter
